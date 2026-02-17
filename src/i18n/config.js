@@ -113,8 +113,8 @@ const resources = {
       "service_dissertations_desc": "PhD nomzodlari uchun metodologiya tavsiyalari va ma'lumotlar tahlilini o'z ichiga olgan ilg'or yordam.",
 
       // PayWhatYouNeed
-      "pay_only": "Faqat Kerak Boʻlganiga To'lem Qiling",
-      "transparent_pricing": "Shaffof hujjat boshiga to'lem. Oylik to'lovlar yo'q.",
+      "pay_only": "Faqat Kerak Boʻlganiga To'lov Qiling",
+      "transparent_pricing": "Shaffof hujjat boshiga to'lov. Oylik to'lovlar yo'q.",
       "category": "Kategoriya",
       "all_documents": "Barcha hujjatlar",
       "researchers": "Tadqiqotchilar uchun",
