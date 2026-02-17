@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import {
-  Funnel,
-  ShieldCheck,
-} from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Funnel, ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
 import ServiceCard from "../ServiceCard.jsx";
 import fakeCards, { iconMap } from '../../data/mockData.js'
 
@@ -12,11 +10,15 @@ const PayWhatYouNeed = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   // Filter cards based on selected category
-  const filteredCards = selectedCategory === 'all' 
-    ? fakeCards 
+  const filteredCards = selectedCategory === 'all'
+    ? fakeCards
     : fakeCards.filter(card => card.category === selectedCategory);
 
-  // Handle navigation to xalfa.uz
+  // Re-run AOS whenever the card list changes (filtered content is dynamic)
+  useEffect(() => {
+    AOS.refresh();
+  }, [filteredCards]);
+
   const handleCreateDocument = (cardTitle) => {
     window.open('https://www.xalfa.uz', '_blank');
   };
@@ -25,17 +27,17 @@ const PayWhatYouNeed = () => {
     <div className="bg-[#f6f6f8] py-12 md:py-20">
       <div className="px-6 max-w-[1440px] mx-auto">
         {/* Header */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] text-center">
+        <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-[#0F172A] text-center">
           {t('pay_only')}
         </h2>
-        <p className="text-base md:text-lg text-[#475569] mt-2 text-center">
+        <p data-aos="fade-up" data-aos-delay="100" className="text-base md:text-lg text-[#475569] mt-2 text-center">
           {t('transparent_pricing')}
         </p>
 
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row gap-6 md:gap-10 mt-10">
           {/* Sidebar - Filters and Payment */}
-          <div className="w-full lg:w-[350px] flex flex-col gap-6">
+          <div data-aos="fade-right" className="w-full lg:w-[350px] flex flex-col gap-6">
             {/* Category Filter */}
             <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-xs">
               <p className="text-[#0F172A] flex items-center gap-2 text-lg font-medium mb-4">
@@ -103,16 +105,17 @@ const PayWhatYouNeed = () => {
               }
             >
               {filteredCards.map((card, index) => (
-                <ServiceCard
-                  key={card.id || index}
-                  title={t(card.titleKey)}
-                  desc={t(card.descKey)}
-                  badge={card.badge}
-                  iconName={card.iconName}
-                  iconMap={iconMap}
-                  buttonText={t('create_document')}
-                  onButtonClick={() => handleCreateDocument(card.titleKey)}
-                />
+                <div key={card.id || index} data-aos="fade-up" data-aos-delay={index * 80}>
+                  <ServiceCard
+                    title={t(card.titleKey)}
+                    desc={t(card.descKey)}
+                    badge={card.badge}
+                    iconName={card.iconName}
+                    iconMap={iconMap}
+                    buttonText={t('create_document')}
+                    onButtonClick={() => handleCreateDocument(card.titleKey)}
+                  />
+                </div>
               ))}
             </div>
             {/* Center single card */}

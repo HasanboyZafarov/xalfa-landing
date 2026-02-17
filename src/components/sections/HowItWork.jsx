@@ -24,10 +24,10 @@ const HowItWork = () => {
 
   return (
     <section className="py-16 px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] text-center">
+      <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-[#0F172A] text-center">
         {t("how_it_works")}
       </h2>
-      <p className="text-base md:text-lg text-[#475569] mt-2 text-center">
+      <p data-aos="fade-up" data-aos-delay="100" className="text-base md:text-lg text-[#475569] mt-2 text-center">
         {t("three_steps")}
       </p>
 
@@ -35,8 +35,8 @@ const HowItWork = () => {
         {/* Connecting line — only visible on md+ */}
         <div className="hidden md:block absolute top-[38px] left-[16.7%] right-[16.7%] h-px bg-gray-200 z-0" />
 
-        {steps.map(({ icon: Icon, titleKey, descKey }) => (
-          <div key={titleKey} className="relative flex flex-col items-center text-center z-10">
+        {steps.map(({ icon: Icon, titleKey, descKey }, i) => (
+          <div key={titleKey} data-aos="fade-up" data-aos-delay={i * 150} className="relative flex flex-col items-center text-center z-10">
             <span className="flex items-center justify-center w-20 h-20 rounded-full bg-blue-50 border border-gray-200 mb-4">
               <Icon className="w-10 h-10 text-blue-500" />
             </span>

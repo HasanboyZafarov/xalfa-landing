@@ -18,6 +18,22 @@ const resources = {
       // Trust
       "trusted_by": "TRUSTED BY STUDENTS & RESEARCHERS ACROSS CENTRAL ASIA",
 
+      // Stats
+      "stat_documents_label": "Documents Generated",
+      "stat_students_label": "Active Users",
+      "stat_languages_label": "Languages Supported",
+
+      // Hero mockup
+      "mockup_topic_label": "Topic",
+      "mockup_topic_value": "Impact of AI on academic research in Central Asia",
+      "mockup_type_thesis": "Thesis",
+      "mockup_type_article": "Article",
+      "mockup_type_coursework": "Coursework",
+      "mockup_generate_btn": "Generate with XALFA",
+      "mockup_generating": "generating...",
+      "mockup_done": "done",
+      "mockup_time_label": "Avg. generation time",
+
       // Write section
       "write_title": "Everything You Need to Write",
       "write_subtitle": "Select from a wide range of academic writing services tailored to your university needs.",
@@ -95,6 +111,22 @@ const resources = {
 
       // Trust
       "trusted_by": "MARKAZIY OSIYODAGI TALABALAR VA TADQIQOTCHILAR TOMONIDAN ISHONILGAN",
+
+      // Stats
+      "stat_documents_label": "Hujjat Yaratildi",
+      "stat_students_label": "Faol Foydalanuvchilar",
+      "stat_languages_label": "Qo'llab-quvvatlanadigan Tillar",
+
+      // Hero mockup
+      "mockup_topic_label": "Mavzu",
+      "mockup_topic_value": "Markaziy Osiyoda ilmiy tadqiqotlarga AIning ta'siri",
+      "mockup_type_thesis": "Tezis",
+      "mockup_type_article": "Maqola",
+      "mockup_type_coursework": "Kurs ishi",
+      "mockup_generate_btn": "XALFA bilan yaratish",
+      "mockup_generating": "yaratilmoqda...",
+      "mockup_done": "tayyor",
+      "mockup_time_label": "O'rtacha yaratish vaqti",
 
       // Write section
       "write_title": "Yozish Uchun Kerakli Hamma Narsa",
@@ -174,6 +206,22 @@ const resources = {
       // Trust
       "trusted_by": "ДОВЕРЯЮТ СТУДЕНТЫ И ИССЛЕДОВАТЕЛИ ПО ВСЕЙ ЦЕНТРАЛЬНОЙ АЗИИ",
 
+      // Stats
+      "stat_documents_label": "Создано документов",
+      "stat_students_label": "Активных Пользователей",
+      "stat_languages_label": "Поддерживаемых языков",
+
+      // Hero mockup
+      "mockup_topic_label": "Тема",
+      "mockup_topic_value": "Влияние ИИ на академические исследования в Центральной Азии",
+      "mockup_type_thesis": "Диссертация",
+      "mockup_type_article": "Статья",
+      "mockup_type_coursework": "Курсовая",
+      "mockup_generate_btn": "Создать с XALFA",
+      "mockup_generating": "генерируется...",
+      "mockup_done": "готово",
+      "mockup_time_label": "Среднее время генерации",
+
       // Write section
       "write_title": "Всё необходимое для написания",
       "write_subtitle": "Широкий выбор академических услуг, адаптированных под нужды вашего университета.",
@@ -249,6 +297,22 @@ const resources = {
       "get_started": "Баштоо",
       // Trust
       "trusted_by": "БОРБОРДУК АЗИЯНЫН СТУДЕНТТЕРИ ЖАНА ИЗИЛДӨӨЧҮЛӨРҮ ИШЕНЕТ",
+
+      // Stats
+      "stat_documents_label": "Документ Түзүлдү",
+      "stat_students_label": "Активдүү Пойдаланувчилар",
+      "stat_languages_label": "Колдоого Алынган Тилдер",
+
+      // Hero mockup
+      "mockup_topic_label": "Тема",
+      "mockup_topic_value": "Борбордук Азиядагы илимий изилдөөлөргө AIнин таасири",
+      "mockup_type_thesis": "Тезис",
+      "mockup_type_article": "Макала",
+      "mockup_type_coursework": "Курстук иш",
+      "mockup_generate_btn": "XALFA менен жаратуу",
+      "mockup_generating": "жаратылууда...",
+      "mockup_done": "даяр",
+      "mockup_time_label": "Орт. жаратуу убактысы",
       // Write
       "write_title": "Жазуу үчүн керектүү баары",
       "write_subtitle": "Университетиңиздин муктаждыктарына ылайыкташтырылган академиялык жазуу кызматтарынын кеңири тандоосу.",
@@ -321,6 +385,22 @@ const resources = {
       "get_started": "Бастау",
       // Trust
       "trusted_by": "ОРТАЛЫҚ АЗИЯ СТУДЕНТТЕРІ МЕН ЗЕРТТЕУШІЛЕРІ СЕНЕДІ",
+
+      // Stats
+      "stat_documents_label": "Құжат Жасалды",
+      "stat_students_label": "Белсенді Пайдаланушылар",
+      "stat_languages_label": "Қолдау Көрсетілетін Тілдер",
+
+      // Hero mockup
+      "mockup_topic_label": "Тақырып",
+      "mockup_topic_value": "Орталық Азиядағы ғылыми зерттеулерге AIдің әсері",
+      "mockup_type_thesis": "Тезис",
+      "mockup_type_article": "Мақала",
+      "mockup_type_coursework": "Курстық жұмыс",
+      "mockup_generate_btn": "XALFA-мен жасау",
+      "mockup_generating": "жасалуда...",
+      "mockup_done": "дайын",
+      "mockup_time_label": "Орт. жасау уақыты",
       // Write
       "write_title": "Жазу үшін қажеттінің бәрі",
       "write_subtitle": "Университетіңіздің қажеттіліктеріне бейімделген академиялық жазу қызметтерінің кең таңдауы.",
@@ -393,6 +473,22 @@ const resources = {
       "get_started": "Baslaw",
       // Trust
       "trusted_by": "ORTA AZIYA STUDENTLERI HÁM IZERTLEWSHILERI ISENIW BİLDİREDİ",
+
+      // Stats
+      "stat_documents_label": "Hújjet Jaratıldı",
+      "stat_students_label": "Aktiv Paydalanıwshılar",
+      "stat_languages_label": "Qollap-quwatlanatugın Tiller",
+
+      // Hero mockup
+      "mockup_topic_label": "Tema",
+      "mockup_topic_value": "Orta Aziyada ilimiy izertlewlerge AIniń tasiri",
+      "mockup_type_thesis": "Tezis",
+      "mockup_type_article": "Maqala",
+      "mockup_type_coursework": "Kurs jumısı",
+      "mockup_generate_btn": "XALFA menen jaratıw",
+      "mockup_generating": "jaratılmaqta...",
+      "mockup_done": "tayar",
+      "mockup_time_label": "Ort. jaratıw waqtı",
       // Write
       "write_title": "Jazıw ushın kerekli hámmesi",
       "write_subtitle": "Universitetiñizdiń talablarına moslastırılǵan akademiyalıq jazıw xızmetleriniń keń tańlawı.",

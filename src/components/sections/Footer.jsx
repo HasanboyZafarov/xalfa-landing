@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-[#F8FAFC] border-t border-gray-200 mt-16">
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand — full width on sm so it doesn't sit beside a lone column */}
-        <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
+        <div data-aos="fade-up" className="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
           <span className="text-2xl font-bold text-[#135bec]">XALFA</span>
           <p className="text-sm text-[#475569] leading-relaxed">
             {t("footer_tagline")}
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         {/* Platform */}
-        <div className="flex flex-col gap-3">
+        <div data-aos="fade-up" data-aos-delay="100" className="flex flex-col gap-3">
           <h4 className="font-bold text-[#0F172A]">{t("platform")}</h4>
           {platformLinks.map((key) => (
             <a
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
 
         {/* Support */}
-        <div className="flex flex-col gap-3">
+        <div data-aos="fade-up" data-aos-delay="200" className="flex flex-col gap-3">
           <h4 className="font-bold text-[#0F172A]">{t("support")}</h4>
           {supportLinks.map((key) => (
             <a
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Payment Methods */}
-        <div className="flex flex-col gap-3">
+        <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col gap-3">
           <h4 className="font-bold text-[#0F172A]">{t("payment_methods")}</h4>
           <div className="flex flex-wrap items-center gap-2">
             {["CLICK", "PAYME"].map((method) => (

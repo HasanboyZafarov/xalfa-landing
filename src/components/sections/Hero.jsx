@@ -1,9 +1,9 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImage from "../../assets/hero-left.svg";
 import Blur from "../Blur";
 import Container from "../Container";
+import HeroMockup from "../HeroMockup";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ const Hero = () => {
         <Blur location={{ x: "right", y: "top" }} />
         <Blur location={{ x: "left", y: "bottom" }} />
         <div className="flex flex-col lg:flex-row gap-6 md:gap-10 items-center z-10">
-          <div className="flex flex-col gap-6 md:gap-10 w-full lg:w-1/2 z-10">
+          <div data-aos="fade-right" className="flex flex-col gap-6 md:gap-10 w-full lg:w-1/2 z-10">
             <p className="text-sm text-[#135bec] flex items-center gap-2">
               <span className="bg-[#135bec] w-[12px] h-[12px] rounded-full inline-block"></span>
               {t('ai_for_academia')}
@@ -35,8 +35,8 @@ const Hero = () => {
               <ArrowRight className="w-6 h-6 text-[#fff]" />
             </button>
           </div>
-          <div className="w-full lg:w-1/2 z-10">
-            <img src={heroImage} alt="Hero" className="w-full" />
+          <div data-aos="fade-left" data-aos-delay="100" className="w-full lg:w-1/2 z-10 flex justify-center py-8">
+            <HeroMockup />
           </div>
         </div>
       </Container>

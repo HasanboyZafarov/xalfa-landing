@@ -10,10 +10,10 @@ const Write = () => {
   return (
     <section className="py-20 md:py-32 z-10 bg-[#fff]">
       <Container>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] text-center">
+        <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-[#0F172A] text-center">
           {t("write_title")}
         </h2>
-        <p className="text-base md:text-lg text-[#475569] mt-2 text-center">
+        <p data-aos="fade-up" data-aos-delay="100" className="text-base md:text-lg text-[#475569] mt-2 text-center">
           {t("write_subtitle")}
         </p>
         <div
@@ -22,14 +22,15 @@ const Write = () => {
             (academicServices.length === 1 ? ' place-items-center' : '')
           }
         >
-          {academicServices.map((service) => (
-            <AcademicCard
-              key={service.id}
-              title={t(service.titleKey)}
-              desc={t(service.descKey)}
-              iconName={service.iconName}
-              iconMap={iconMap}
-            />
+          {academicServices.map((service, i) => (
+            <div key={service.id} data-aos="fade-up" data-aos-delay={i * 80}>
+              <AcademicCard
+                title={t(service.titleKey)}
+                desc={t(service.descKey)}
+                iconName={service.iconName}
+                iconMap={iconMap}
+              />
+            </div>
           ))}
         </div>
       </Container>
